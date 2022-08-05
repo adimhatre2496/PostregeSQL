@@ -1,0 +1,37 @@
+table 1
+----
+create table person1(
+    id int primary key default (nextval('person_seq')),
+    first_name varchar(50),
+    last_name varchar(50),
+    address_id int );
+
+select * from person1;
+
+insert into person1(first_name, last_name, address_id)
+values('Aditya','Mhatre',2001),('tzuyu','chou',2002),
+('lily','Marks',2003),('Jk','Willams',2004);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+table 2
+---------------------------------------------------------------------------------------------------------------------------------------------
+create table address1(
+    id int primary key default (nextval('address_seq')),
+    address1 varchar(50),
+    address2 varchar(50),
+    city varchar(70),
+    state varchar(70),
+    zip_code bigint );
+
+select * from address1;
+
+insert into address1(address1,address2,city,state,zip_code)
+values('Kisan','Wagle','Thane','Maharashtra',400604),
+('kings','zipoeer','Seoul',null,null),
+('street254','Nerul','Navi_Mumbai','Maharashtra',400236);
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+join query
+---------------------------------------------------------------------------------------------------------------------------------------
+select * from person1 left join address1 on person1.address_id=address1.id;

@@ -1,0 +1,5 @@
+"id","first_name","last_name","address_id","id-2","address1","address2","city","state","zip_code"
+1001,"Aditya","Mhatre",2001,2001,"Kisan","Wagle","Thane","Maharashtra",400604
+1002,"tzuyu","chou",2002,2002,"kings","zipoeer","Seoul",NULL,NULL
+1003,"lily","Marks",2006,NULL,NULL,NULL,NULL,NULL,NULL
+1004,"Jk","Willams",2004,NULL,NULL,NULL,NULL,NULL,NULL
